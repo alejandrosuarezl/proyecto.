@@ -1,0 +1,175 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #000000;
+            background: #f5f5f5;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            
+            color: white;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        section {
+           section {
+    /* background: white; */  /* Se quita el fondo blanco */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .ediciones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .edicion {
+            background: #ecf0f1;
+            padding: 15px;
+        }
+        
+        .edicion h3 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        
+        .edicion p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .stat {
+            background: #0099ff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .stat:nth-child(2) {
+            background: #ff1900;
+        }
+        
+        .stat:nth-child(3) {
+            background: #ff9100;
+        }
+        
+        .stat:nth-child(4) {
+            background: #00ff37;
+        }
+        
+        .stat-number {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            background: #3073b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .proximo-mundial {
+            background: #664394;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            .ediciones-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+        }
+
+        body {
+  background: #3073b6;
+}
+
+/* Animación al pasar el mouse sobre las estadísticas */
+.stat {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.stat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación para Ediciones Destacadas */
+.edicion {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.edicion:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  background-color: #d1f0ff; /* color de fondo al pasar el mouse */
+}
+
+/* Animación para las estadísticas */
+.stat {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.stat:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
